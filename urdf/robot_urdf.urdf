@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name = "robo_urdf">
+    <link name = "base_link">
+        <visual>
+        <origin rpy = "0 0 0" xyz = "0 0 0"/>
+        <geometry>
+            <cylinder radius = "0.06" length = "0.09"/>
+        </geometry>
+        </visual>
+    </link>
+    <link name = "simple_lnk">
+        <visual>
+        <origin rpy = "0 0 0" xyz = "0 0 0"/>
+        <geometry>
+            <cylinder radius = "0.06" length = "0.05"/>
+        </geometry>
+        </visual>
+    </link>
+
+    <joint name = "simple" type = "revolute">
+        <parent link ="base_link"/>
+        <child link = "simple_lnk"/>
+        <axis xyz = "0 0 1"/>
+        <limit lower="-0.2" upper="0.2" effort="0.1" velocity="0.005"/>
+        <origin xyz ="0 0 0.1"/>
+    </joint>
+</robot>

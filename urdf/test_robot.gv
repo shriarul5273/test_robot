@@ -1,0 +1,8 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"top_link" [label="top_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_joint" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"base_joint" -> "top_link"
+}
