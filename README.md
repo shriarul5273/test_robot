@@ -1,7 +1,7 @@
 # test_robot
 
 
-## created by shriarul643@gmail.com
+## Author shriarul643@gmail.com
 
 It is a demo of robot_state_publisher and joint_state_publisher 
 
